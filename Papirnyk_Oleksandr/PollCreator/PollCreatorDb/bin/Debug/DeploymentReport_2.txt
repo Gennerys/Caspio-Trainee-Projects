@@ -1,0 +1,29 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       [dbo].[PollOption]
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       The column [dbo].[PollOption].[Value] on table [dbo].[PollOption] must be added, but the column has no default value and
+         does not allow NULL values. If the table contains data, the ALTER script will not work. To avoid this issue you must
+         either: add a default value to the column, mark it as allowing NULL values, or enable the generation of smart-defaults
+         as a deployment option.
+       The type for column Poll_PK in table [dbo].[PollOption] is currently  NVARCHAR (50) NOT NULL but is being changed to 
+         INT NOT NULL. Data loss could occur.
+
+** User actions
+     Rename
+       [dbo].[PollOption].[Poll_PK] (Column)
+     Table rebuild
+       [dbo].[PollOption] (Table)
+     Create
+       [dbo].[FK_Poll_PollId] (Foreign Key)
+       [dbo].[CHECK_SerialNumber] (Check Constraint)
+
+** Supporting actions
+
+The column [dbo].[PollOption].[Value] on table [dbo].[PollOption] must be added, but the column has no default value and does not allow NULL values. If the table contains data, the ALTER script will not work. To avoid this issue you must either: add a default value to the column, mark it as allowing NULL values, or enable the generation of smart-defaults as a deployment option.
+The type for column Poll_PK in table [dbo].[PollOption] is currently  NVARCHAR (50) NOT NULL but is being changed to  INT NOT NULL. Data loss could occur.
+

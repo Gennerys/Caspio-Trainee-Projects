@@ -1,0 +1,6 @@
+D:\GIT\TraineePlayground\Papirnyk_Oleksandr\PollCreator\PollCreatorDb\bin\Debug\PollCreatorDb.dacpac
+D:\GIT\TraineePlayground\Papirnyk_Oleksandr\PollCreator\PollCreatorDb\bin\Debug\PollCreatorDb.dll
+D:\GIT\TraineePlayground\Papirnyk_Oleksandr\PollCreator\PollCreatorDb\bin\Debug\PollCreatorDb.pdb
+D:\GIT\TraineePlayground\Papirnyk_Oleksandr\PollCreator\PollCreatorDb\obj\Debug\PollCreatorDb.dll
+D:\GIT\TraineePlayground\Papirnyk_Oleksandr\PollCreator\PollCreatorDb\obj\Debug\PollCreatorDb.pdb
+D:\GIT\TraineePlayground\Papirnyk_Oleksandr\PollCreator\PollCreatorDb\obj\Debug\PollCreatorDb.sqlprojAssemblyReference.cache

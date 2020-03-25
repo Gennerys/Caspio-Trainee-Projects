@@ -1,0 +1,10 @@
+D:\GIT\TraineePlayground\Papirnyk_Oleksandr\TTS\TTS\bin\Debug\TTS.dacpac
+D:\GIT\TraineePlayground\Papirnyk_Oleksandr\TTS\TTS\bin\Debug\TTS.dll
+D:\GIT\TraineePlayground\Papirnyk_Oleksandr\TTS\TTS\bin\Debug\TTS.pdb
+D:\GIT\TraineePlayground\Papirnyk_Oleksandr\TTS\TTS\obj\Debug\TTS.sqlprojAssemblyReference.cache
+D:\GIT\TraineePlayground\Papirnyk_Oleksandr\TTS\TTS\obj\Debug\TTS.dll
+D:\GIT\TraineePlayground\Papirnyk_Oleksandr\TTS\TTS\obj\Debug\TTS.pdb
+D:\GIT\TraineePlayground\Papirnyk_Oleksandr\TTS\TTS\obj\Debug\Model.xml
+D:\GIT\TraineePlayground\Papirnyk_Oleksandr\TTS\TTS\obj\Debug\refactor.xml
+D:\GIT\TraineePlayground\Papirnyk_Oleksandr\TTS\TTS\obj\Debug\postdeploy.sql
+D:\GIT\TraineePlayground\Papirnyk_Oleksandr\TTS\TTS\obj\Debug\predeploy.sql

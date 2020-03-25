@@ -1,0 +1,5 @@
+﻿CREATE TABLE [dbo].[WorkItemType]
+(
+	[Id] INT IDENTITY(1,1) NOT NULL PRIMARY KEY,
+    [WorkItemTypeName] NVARCHAR(100) NULL
+)

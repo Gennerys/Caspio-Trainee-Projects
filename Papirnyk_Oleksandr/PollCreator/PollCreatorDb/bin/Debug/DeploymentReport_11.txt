@@ -1,0 +1,25 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       [dbo].[ct_poll_votes]
+       [dbo].[ct_vote]
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Table rebuild
+       [dbo].[ct_poll_votes] (Table)
+       [dbo].[ct_vote] (Table)
+
+** Supporting actions
+     Drop
+       [dbo].[FK_PK_poll_poll_votes_id] (Foreign Key)
+       [dbo].[FK_PK_vote_poll_votes_id] (Foreign Key)
+       [dbo].[FK_PK_poll_vote_id] (Foreign Key)
+     Create
+       [dbo].[FK_PK_poll_poll_votes_id] (Foreign Key)
+       [dbo].[FK_PK_vote_poll_votes_id] (Foreign Key)
+       [dbo].[FK_PK_poll_vote_id] (Foreign Key)

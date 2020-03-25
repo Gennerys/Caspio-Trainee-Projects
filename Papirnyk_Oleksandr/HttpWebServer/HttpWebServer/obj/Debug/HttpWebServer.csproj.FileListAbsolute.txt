@@ -1,0 +1,11 @@
+D:\GIT\TraineePlayground\Papirnyk_Oleksandr\HttpWebServer\HttpWebServer\bin\Debug\images\homyak.jpg
+D:\GIT\TraineePlayground\Papirnyk_Oleksandr\HttpWebServer\HttpWebServer\bin\Debug\pages\index.html
+D:\GIT\TraineePlayground\Papirnyk_Oleksandr\HttpWebServer\HttpWebServer\bin\Debug\WebServerTestAttempt.exe.config
+D:\GIT\TraineePlayground\Papirnyk_Oleksandr\HttpWebServer\HttpWebServer\bin\Debug\WebServerTestAttempt.exe
+D:\GIT\TraineePlayground\Papirnyk_Oleksandr\HttpWebServer\HttpWebServer\bin\Debug\WebServerTestAttempt.pdb
+D:\GIT\TraineePlayground\Papirnyk_Oleksandr\HttpWebServer\HttpWebServer\obj\Debug\HttpWebServer.csprojAssemblyReference.cache
+D:\GIT\TraineePlayground\Papirnyk_Oleksandr\HttpWebServer\HttpWebServer\obj\Debug\WebServerTestAttempt.exe
+D:\GIT\TraineePlayground\Papirnyk_Oleksandr\HttpWebServer\HttpWebServer\obj\Debug\WebServerTestAttempt.pdb
+D:\GIT\TraineePlayground\Papirnyk_Oleksandr\HttpWebServer\HttpWebServer\bin\Debug\Ninject.dll
+D:\GIT\TraineePlayground\Papirnyk_Oleksandr\HttpWebServer\HttpWebServer\bin\Debug\Ninject.xml
+D:\GIT\TraineePlayground\Papirnyk_Oleksandr\HttpWebServer\HttpWebServer\obj\Debug\HttpWebServer.csproj.CopyComplete

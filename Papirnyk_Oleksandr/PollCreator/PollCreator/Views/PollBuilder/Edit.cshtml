@@ -1,0 +1,66 @@
+﻿@model PollCreator.ViewModels.PollBuilderViewModel
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet"  href="/css/pageBuilder.css">
+	<link rel="stylesheet" href="/css/votePage.css"/>
+	<title>Poll Builder</title>
+</head>
+<body>
+	<ul class="headerUl">
+		<li class="headerLi"><a asp-action="Index" asp-controller="Home">Home Page</a></li>
+		<li class="headerLi"><a asp-action="Create" asp-controller="PollBuilder">Create Another Poll</a></li>
+	</ul>
+
+<div class="subTitlePageBuilder">
+	<h1>Welcome To The Polls Builder!</h1>
+</div>
+<div class="pageBuilderContainer">
+	<div id="pageBuilderFormContainer" class="pageBuilderFormContainer position__absolute">
+		<form id="pollBuilderForm" asp-action="Edit" asp-controller="PollBuilder" method="post" autocomplete="off">
+			<fieldset id="pollBuilderFromFields">
+				<div class="titleContainer">
+					<label class="pageBuilderLabel" for="title">Title:</label>
+					<input  id="title" name="title" type="text" placeholder="Poll title here..." value="@Model.Title" maxlength="100"><br>
+				</div>
+				<p>Choose your poll type:</p>
+				<div>
+					<input class="form-radio"  id="isMultiOption" name="pollType" type="radio" value="false" @(Convert.ToBoolean(!Model.IsSingleOption) ? @Html.Raw("checked") : null)>
+					<label  for="isMultiOption">Multi-Choice</label>
+				</div>
+				<div>
+					<input class="form-radio"  id="isSingleOption" name="pollType" type="radio" value="true" @(Convert.ToBoolean(Model.IsSingleOption) ? @Html.Raw("checked") : null)>
+					<label  for="isSingleOption">Single-Choice</label>
+				</div>
+				<div>
+					<p>Poll options: </p>
+					<div id="options">
+					</div>
+					<button  id="addPollOption" type="button">Add</button>
+				</div>
+
+				<div>
+					<input asp-for="PollId" value="@Model.PollId">
+					<input asp-for="EditorToken" value="@Model.EditorToken">
+					<input asp-for="IsPublished" value="true"/>
+					<input asp-for="Host" value="@Model.Host"/>
+					<br>
+					<button id="publishPoll" type="button">Publish</button>
+				</div>
+			</fieldset>
+		</form>
+		<span id="inputError"></span>
+		<div id="container">
+			<span id="votesOnBuilder"></span>
+		</div>
+	</div>
+	<div id="chart" class="chart-container">
+		<canvas id="voteContainer"></canvas>
+	</div>
+</div>
+<script src="/js/pageBuilder.js" type="module"></script>
+<script id="data" type="application/json">
+		@Html.Raw(Json.Serialize(Model))
+	</script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+* {
+    box-sizing: border-box;
+}
+*,
+*:focus {
+    outline: none !important;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    position: relative;
+}
+.formStyle{
+    font: 13px "Lucida Sans Unicode","Lucida Handwriting", sans-serif;
+}
+.formStyle li{
+    padding: 0;
+    display: block;
+    list-style: none;
+    margin: 10px 0 0 0;
+}
+.formStyle label{
+    margin:0 0 3px 0;
+    padding:0px;
+    display: block;
+    font-weight: bold;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+}
+p {
+    margin: 0;
+    padding: 0;
+}
+.mainWrapper{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+.leftSideWrapper{
+    width: 40vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+.workItemForm{
+    width: 40vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+}
+.workItemList{
+    width: 40vw;
+    height: 50vh;
+}
+.workItemList ul{
+    padding-left: 2rem;
+    list-style-type: none;
+}
+.workItemList li{
+    padding-left: 2rem;
+    background-image: url(https://image.flaticon.com/icons/svg/2450/2450137.svg);
+    background-position: 0 0;
+    background-size: 1.6rem 1.6rem;
+    background-repeat: no-repeat;
+    font: 13px "Lucida Sans Unicode","Lucida Handwriting", sans-serif;
+}
+.workItemList li:hover{
+    background-color: #FFFF00;
+}
+
+.workItemList li.active{
+    background-color: #FFFF00;
+}
+.rightSideWrapper{
+    width: 60vw;
+    height: 100vh;
+}
+.border{
+    border: solid 3px black;
+    overflow: scroll;
+}
+

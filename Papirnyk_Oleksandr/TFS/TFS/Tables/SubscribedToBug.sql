@@ -1,0 +1,11 @@
+﻿CREATE TABLE [dbo].[SubscribedToBug]
+(
+	[Id] INT IDENTITY(1,1) NOT NULL PRIMARY KEY, 
+    [BugId] INT NOT NULL, 
+    [UserId] INT NOT NULL,
+	CONSTRAINT FK_SubscribedBug_Id FOREIGN KEY (BugId)
+		REFERENCES [Bug] (Id) ON DELETE CASCADE,
+	CONSTRAINT FK_SubscribedToBugUser_Id FOREIGN KEY (UserId)
+		REFERENCES [User] (Id),
+	CONSTRAINT UniqueSubBugIDs UNIQUE([BugId],[UserId])
+)

@@ -1,0 +1,11 @@
+﻿CREATE TABLE [dbo].[UserStoryChilds]
+(
+	[Id] INT IDENTITY(1,1) NOT NULL PRIMARY KEY, 
+    [UserStoryId] INT NOT NULL, 
+    [TaskId] INT NOT NULL,
+	CONSTRAINT FK_USWithChilds_Id FOREIGN KEY (UserStoryId)
+		REFERENCES [UserStory] (Id) ON DELETE CASCADE,
+	CONSTRAINT FK_USTaskChild_Id FOREIGN KEY (TaskId)
+		REFERENCES [Task] (Id) ON DELETE CASCADE,
+	CONSTRAINT UniqueUsIDs UNIQUE([UserStoryId],[TaskId])
+)

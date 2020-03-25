@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Work Item Manager</title>
+</head>
+<body>
+<div class="mainWrapper">
+    <div class="leftSideWrapper">
+        <div class="workItemForm border">
+            <form>
+                <ul class="formStyle">
+                    <h1>Work Item Manager</h1>
+                    <li >
+                        <label for="title">Title:</label>
+                        <input type="text" id ="title" name="title" placeholder="Your title goes here" required>
+                    </li>
+                    <li >
+                        <label for="description">Description: </label>
+                        <textarea id ="description" name="description" placeholder="Your description goes here" required></textarea>
+                    </li>
+                    <li>
+                        <label for="workItemType">Choose your item type:</label>
+                            <select id ="workItemType" required>
+                                <option disabled selected value=""></option>
+                                <option value="UserStory">User Story</option>
+                                <option value="Bug">Bug</option>
+                                <option value="Other">Other</option>
+                            </select>
+                    </li>
+                    <li>
+                        <button id="addWorkItem" type="submit">Add Work Item</button>
+                    </li>
+                </ul>
+            </form>
+        </div>
+        <div class="workItemList border">
+            <h1>Work Item's: </h1>
+            <ul id="workItems">
+
+            </ul>
+        </div>
+    </div>
+    <div class="rightSideWrapper border">
+        <h1>To Do's:</h1>
+        <div>
+            <label for="todo">Add To Do: </label>
+            <input type="text" id="todo" name="todo" placeholder="Your text here" required>
+            <label for="toDoState">Choose To Do state:</label>
+            <select id ="toDoState" required>
+                <option disabled selected value=""></option>
+                <option value="Created">Created</option>
+                <option value="Done">Done</option>
+            </select>
+            <button id="addToDo" type="button" disabled>Add</button>
+            <h2>To Do's for specific task:</h2>
+            <ol id ="ToDos">
+
+            </ol>
+        </div>
+
+    </div>
+</div>
+
+<script src ="js/main.js"></script>
+</body>
+</html>

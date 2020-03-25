@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="51122274-857f-4388-b805-6f5a5945943f" ChangeDateTime="02/13/2020 16:08:25">
+    <Property Name="ElementName" Value="[dbo].[PollOption].[PollId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[PollOption]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Poll_PK" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="dae1a1ec-15ec-4b56-a04e-216bca9da872" ChangeDateTime="02/18/2020 10:40:43">
+    <Property Name="ElementName" Value="[dbo].[Poll]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[ct_poll]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="ea7d3991-33e7-4dc9-b76b-8e7db6621a69" ChangeDateTime="02/18/2020 10:41:15">
+    <Property Name="ElementName" Value="[dbo].[PollOption]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[ct_poll_option]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="b2b94ca2-d7fd-41d8-84af-076141c4bd18" ChangeDateTime="02/18/2020 10:44:36">
+    <Property Name="ElementName" Value="[dbo].[ct_poll_option].[Poll_PK]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[ct_poll_option]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="FK_poll_id" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="f94a14c9-2982-4c5f-931f-e35114f3db3a" ChangeDateTime="02/18/2020 10:46:15">
+    <Property Name="ElementName" Value="[dbo].[ct_poll_option].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[ct_poll_option]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="PK_poll_option_id" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="c325e41a-be68-4586-ab09-1daa8edfb26b" ChangeDateTime="02/18/2020 10:46:22">
+    <Property Name="ElementName" Value="[dbo].[ct_poll_option].[SerialNumber]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[ct_poll_option]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="serial_number" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="67827744-3e2d-4d62-b15c-0300574ec7fc" ChangeDateTime="02/18/2020 10:46:29">
+    <Property Name="ElementName" Value="[dbo].[ct_poll_option].[Value]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[ct_poll_option]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="value" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="311afeb7-8a32-4069-b962-3174abadba74" ChangeDateTime="02/18/2020 10:47:53">
+    <Property Name="ElementName" Value="[dbo].[ct_poll_option].[FK_poll_id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[ct_poll_option]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="poll_id" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="5cb1d21c-4355-4f73-a2ed-53b77c81964a" ChangeDateTime="02/25/2020 19:02:38">
+    <Property Name="ElementName" Value="[dbo].[ct_vote].[valu]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[ct_vote]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="value" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="9132b876-00b3-4608-a93b-f965e9160fc9" ChangeDateTime="03/03/2020 10:32:08">
+    <Property Name="ElementName" Value="[dbo].[ct_vote].[DateOfVote]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[ct_vote]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="dateOfVote" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="cb88af78-ec0f-4628-aab0-90982c5c5307" ChangeDateTime="03/03/2020 10:32:46">
+    <Property Name="ElementName" Value="[dbo].[ct_vote].[dateOfVote]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[ct_vote]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="date_of_vote" />
+  </Operation>
+</Operations>

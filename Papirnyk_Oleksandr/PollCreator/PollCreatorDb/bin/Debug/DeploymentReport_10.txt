@@ -1,0 +1,19 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Create
+       [dbo].[ct_poll_votes] (Table)
+       [dbo].[ct_vote] (Table)
+       [dbo].[FK_PK_poll_poll_votes_id] (Foreign Key)
+       [dbo].[FK_PK_vote_poll_votes_id] (Foreign Key)
+       [dbo].[FK_PK_poll_vote_id] (Foreign Key)
+
+** Supporting actions

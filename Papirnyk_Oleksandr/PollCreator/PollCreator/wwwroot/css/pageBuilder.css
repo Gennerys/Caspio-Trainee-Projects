@@ -1,0 +1,119 @@
+﻿* {
+	outline: none;
+}
+
+body {
+	font-family: Montserrat, sans-serif;
+}
+
+.subTitlePageBuilder {
+	text-align: center;
+}
+h1 {
+	font-size: 50px;
+}
+input {
+	padding: 5px;
+	border-radius: 5px;
+}
+.titleContainer {
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+}
+
+.form-radio
+{
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	display: inline-block;
+	position: relative;
+	background-color: #f1f1f1;
+	color: #666;
+	top: 10px;
+	height: 30px;
+	width: 30px;
+	border: 0;
+	border-radius: 50px;
+	cursor: pointer;     
+	margin-right: 7px;
+	outline: none;
+}
+.form-radio:checked::before
+{
+	position: absolute;
+	font: 13px/1 'Open Sans', sans-serif;
+	left: 11px;
+	top: 7px;
+	content: '\02143';
+	transform: rotate(40deg);
+}
+.form-radio:hover
+{
+	background-color: #f7f7f7;
+}
+.form-radio:checked
+{
+	background-color: #f1f1f1;
+}
+
+fieldset {
+	background-color: #f099b5;
+	max-width: 600px;
+	padding: 16px;
+}
+
+.pageBuilderLabel {
+	font-size: 30px;
+}
+
+
+
+.headerUl {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+	display: flex;
+	justify-content: center;
+}
+
+.headerLi {
+	float: left;
+}
+
+.headerLi a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+}
+
+.headerLi a:hover {
+	background-color: #111;
+}
+
+.pageBuilderContainer {
+	display: flex;
+	justify-content: space-around;
+
+}
+
+.pageBuilderFormContainer {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 750px;
+	font-size: 30px;
+}
+
+
+.pollOptions {
+	display: block;
+	margin-bottom: 10px;
+}
+
+

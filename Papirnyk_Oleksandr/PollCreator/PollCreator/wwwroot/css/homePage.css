@@ -1,0 +1,56 @@
+﻿body {
+	display: grid;
+	place-items: center;
+	font-family: Montserrat, sans-serif;
+}
+
+.createBtn:link, .createBtn:visited {
+	background-color: #f44336;
+	color: white;
+	padding: 14px 25px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	border-radius: 25px;
+}
+
+createBtn:hover, createBtn:active {
+	background-color: red;
+}
+img {
+	padding: 10px;
+	width: 25vw;
+	height: 15vw;
+}
+
+.topFive {
+	color: red;
+	font-family: helvetica;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 25px;
+}
+.topFive:hover {
+	text-decoration: underline;
+}
+
+ol {
+	list-style: none;
+	counter-reset: my-awesome-counter;
+}
+ol li {
+	counter-increment: my-awesome-counter;
+	font-size: 25px;
+}
+ol li::before {
+	content: counter(my-awesome-counter) ". ";
+	color: red;
+	font-weight: bold;
+	font-size: 25px;
+}
+
+p {
+	display: flex;
+	justify-content: center;
+	font-size: 40px;
+}

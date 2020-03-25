@@ -1,0 +1,44 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Create
+       [dbo].[Area] (Table)
+       [dbo].[Comments] (Table)
+       [dbo].[State] (Table)
+       [dbo].[SubscribedToWorkItem] (Table)
+       [dbo].[User] (Table)
+       [dbo].[WorkItem] (Table)
+       [dbo].[WorkItemType] (Table)
+       Default Constraint: unnamed constraint on [dbo].[Comments] (Default Constraint)
+       Default Constraint: unnamed constraint on [dbo].[User] (Default Constraint)
+       Default Constraint: unnamed constraint on [dbo].[WorkItem] (Default Constraint)
+       Default Constraint: unnamed constraint on [dbo].[WorkItem] (Default Constraint)
+       Default Constraint: unnamed constraint on [dbo].[WorkItem] (Default Constraint)
+       Default Constraint: unnamed constraint on [dbo].[WorkItem] (Default Constraint)
+       Default Constraint: unnamed constraint on [dbo].[WorkItem] (Default Constraint)
+       Default Constraint: unnamed constraint on [dbo].[WorkItem] (Default Constraint)
+       Default Constraint: unnamed constraint on [dbo].[WorkItem] (Default Constraint)
+       Default Constraint: unnamed constraint on [dbo].[WorkItem] (Default Constraint)
+       [dbo].[FK_UserCommented_Id] (Foreign Key)
+       [dbo].[FK_SubscribedUser_Id] (Foreign Key)
+       [dbo].[FK_State_Id] (Foreign Key)
+       [dbo].[FK_Area_Id] (Foreign Key)
+       [dbo].[FK_UserAssigned_Id] (Foreign Key)
+       [dbo].[FK_WorkItemType_Id] (Foreign Key)
+       [dbo].[CHECKPriority] (Check Constraint)
+       [dbo].[CHECKEstimate] (Check Constraint)
+       [dbo].[AddUser] (Procedure)
+       [dbo].[AddWorkItem] (Procedure)
+       [dbo].[GetCommentsByUser] (Procedure)
+       [dbo].[SubscribeToWorkItem] (Procedure)
+       [dbo].[UpdateWorkItem] (Procedure)
+
+** Supporting actions

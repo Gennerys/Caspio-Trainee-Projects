@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Operations Version="1.0" xmlns="http://schemas.microsoft.com/sqlserver/dac/Serialization/2012/02">
+  <Operation Name="Rename Refactor" Key="01a9477e-9d87-4fb1-838d-1c5d23ea1db2" ChangeDateTime="11/18/2019 10:52:48">
+    <Property Name="ElementName" Value="[dbo].[User].[Name]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[User]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="FirstName" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="1a21de6b-a875-4bda-9abf-b92c2dbcad36" ChangeDateTime="11/20/2019 08:28:01">
+    <Property Name="ElementName" Value="[dbo].[BugChilds].[BudId]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[BugChilds]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="BugId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="cb43e881-1991-4486-b4ad-6ff9eee5ecd8" ChangeDateTime="11/20/2019 13:11:00">
+    <Property Name="ElementName" Value="[dbo].[TaskHistory].[Priority]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[TaskHistory]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="s" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="ca2115ea-5ba3-4e62-8482-35963f4f234d" ChangeDateTime="11/20/2019 13:11:02">
+    <Property Name="ElementName" Value="[dbo].[TaskHistory].[Estimate]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[TaskHistory]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="a" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="f2662d81-c172-43e2-9d75-d1dd4bf3a677" ChangeDateTime="11/20/2019 13:11:03">
+    <Property Name="ElementName" Value="[dbo].[TaskHistory].[Description]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[TaskHistory]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="d" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="c5af864a-8bb3-419e-b600-1c37a3d1509d" ChangeDateTime="11/20/2019 13:11:18">
+    <Property Name="ElementName" Value="[dbo].[TaskHistory].[d]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[TaskHistory]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Priority" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="4f642056-cbef-4eae-b2ac-5e372b70717f" ChangeDateTime="11/20/2019 13:11:36">
+    <Property Name="ElementName" Value="[dbo].[TaskHistory].[a]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[TaskHistory]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="Description" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="85497bdb-6c81-4874-9fdb-be998140b367" ChangeDateTime="11/20/2019 13:11:52">
+    <Property Name="ElementName" Value="[dbo].[TaskHistory].[S]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[TaskHistory]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="StateId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="d84d6c28-f549-4992-a0ae-ee34b2a97751" ChangeDateTime="11/22/2019 15:20:28">
+    <Property Name="ElementName" Value="[dbo].[SubscribedToBug].[Bug]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[SubscribedToBug]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="BugId" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="a1584a36-31ae-4065-bf91-04ab4f1aafec" ChangeDateTime="11/26/2019 14:00:43">
+    <Property Name="ElementName" Value="[dbo].[Audit_Action]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[AuditAction]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="8b1bd661-2033-4fe4-8146-0fb99ba47ab6" ChangeDateTime="11/26/2019 14:10:26">
+    <Property Name="ElementName" Value="[dbo].[UserStory_Comments]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[UserStoryComments]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="68e2be1e-24e9-49ef-92fc-1d286d8adf57" ChangeDateTime="11/26/2019 14:11:33">
+    <Property Name="ElementName" Value="[dbo].[Task_Comments]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[TaskComments]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="6e51b5b6-89f6-4ec7-8490-d6a67a1a3b14" ChangeDateTime="11/26/2019 14:12:03">
+    <Property Name="ElementName" Value="[dbo].[Bug_Comments]" />
+    <Property Name="ElementType" Value="SqlTable" />
+    <Property Name="ParentElementName" Value="[dbo]" />
+    <Property Name="ParentElementType" Value="SqlSchema" />
+    <Property Name="NewName" Value="[BugComments]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="b2b195d8-9807-4918-8db6-e8b5e870d5af" ChangeDateTime="11/26/2019 14:13:48">
+    <Property Name="ElementName" Value="[dbo].[UserStory_Update_Audit]" />
+    <Property Name="ElementType" Value="SqlDmlTrigger" />
+    <Property Name="ParentElementName" Value="[dbo].[UserStory]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[UserStoryUpdateAudit]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="467e453f-23f1-44f5-ac66-69f698bbeae6" ChangeDateTime="11/26/2019 14:14:03">
+    <Property Name="ElementName" Value="[dbo].[UserStory_Insert_Audit]" />
+    <Property Name="ElementType" Value="SqlDmlTrigger" />
+    <Property Name="ParentElementName" Value="[dbo].[UserStory]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[UserStoryInsertAudit]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="579fe563-4f88-433b-81bb-793ddc4c7890" ChangeDateTime="11/26/2019 14:14:42">
+    <Property Name="ElementName" Value="[dbo].[UserStory_Delete_Audit]" />
+    <Property Name="ElementType" Value="SqlDmlTrigger" />
+    <Property Name="ParentElementName" Value="[dbo].[UserStory]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[UserStoryDeleteAudit]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="2d14bdc1-875c-415f-9fe1-83ace68e5d5e" ChangeDateTime="11/26/2019 14:15:30">
+    <Property Name="ElementName" Value="[dbo].[Task_Update_Audit]" />
+    <Property Name="ElementType" Value="SqlDmlTrigger" />
+    <Property Name="ParentElementName" Value="[dbo].[Task]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[TaskUpdateAudit]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="eab5f30c-95d5-4ef0-a718-9c809023c4ee" ChangeDateTime="11/26/2019 14:15:57">
+    <Property Name="ElementName" Value="[dbo].[Task_Insert_Audit]" />
+    <Property Name="ElementType" Value="SqlDmlTrigger" />
+    <Property Name="ParentElementName" Value="[dbo].[Task]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[TaskInsertAudit]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="7c62449e-cd41-4fd3-a090-6f755e41c765" ChangeDateTime="11/26/2019 14:16:21">
+    <Property Name="ElementName" Value="[dbo].[Task_Delete_Audit]" />
+    <Property Name="ElementType" Value="SqlDmlTrigger" />
+    <Property Name="ParentElementName" Value="[dbo].[Task]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[TaskDeleteAudit]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="bca3437f-5191-42a1-b3a0-4b454f2f73a8" ChangeDateTime="11/26/2019 14:16:44">
+    <Property Name="ElementName" Value="[dbo].[Bug_Update_Audit]" />
+    <Property Name="ElementType" Value="SqlDmlTrigger" />
+    <Property Name="ParentElementName" Value="[dbo].[Bug]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[BugUpdateAudit]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="a1f7f30c-eda5-4fc7-9cb4-c29451564277" ChangeDateTime="11/26/2019 14:17:05">
+    <Property Name="ElementName" Value="[dbo].[Bug_Insert_Audit]" />
+    <Property Name="ElementType" Value="SqlDmlTrigger" />
+    <Property Name="ParentElementName" Value="[dbo].[Bug]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[BugInsertAudit]" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="be794e1e-7ec4-450f-89e4-3d0409f82eff" ChangeDateTime="11/26/2019 14:17:29">
+    <Property Name="ElementName" Value="[dbo].[Bug_Delete_Audit]" />
+    <Property Name="ElementType" Value="SqlDmlTrigger" />
+    <Property Name="ParentElementName" Value="[dbo].[Bug]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="[BugDeleteAudit]" />
+  </Operation>
+</Operations>

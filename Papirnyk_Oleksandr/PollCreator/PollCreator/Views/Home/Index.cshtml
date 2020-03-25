@@ -1,0 +1,32 @@
+﻿@model PollCreator.ViewModels.HomePageViewModel
+
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="/css/homePage.css">
+	<title>Home Page</title>
+</head>
+<body>
+	<h1>Welcome To The Polls Creator!</h1>
+	<img src="gifs/cat.gif" />
+	<div>
+		<a class="createBtn" asp-controller="PollBuilder" asp-action="Create">Create a Poll</a>
+	</div>
+<div style="padding: 60px;">
+	@{
+		if (Model.TopFivePolls.Any())
+		{
+			<ol>
+				<p>Visit our top 5 polls!</p>
+					@foreach (var item in Model.TopFivePolls)
+					{
+						<li><a class="topFive" href="@Model.Host/p/@item.PollId">@item.PollTitle</a></li>
+					}
+			</ol>
+		}
+	}
+</div>
+	<script src="/js/homePage.js"></script>
+	<div></div>
+</body>
+</html>

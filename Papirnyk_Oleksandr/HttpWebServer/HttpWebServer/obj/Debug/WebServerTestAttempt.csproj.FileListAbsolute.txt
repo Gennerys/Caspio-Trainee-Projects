@@ -1,0 +1,8 @@
+C:\Users\oleksandr.papirnyk\Desktop\WebServerTestAttempt\WebServerTestAttempt\bin\Debug\pages\index.html
+C:\Users\oleksandr.papirnyk\Desktop\WebServerTestAttempt\WebServerTestAttempt\bin\Debug\WebServerTestAttempt.exe.config
+C:\Users\oleksandr.papirnyk\Desktop\WebServerTestAttempt\WebServerTestAttempt\bin\Debug\WebServerTestAttempt.exe
+C:\Users\oleksandr.papirnyk\Desktop\WebServerTestAttempt\WebServerTestAttempt\bin\Debug\WebServerTestAttempt.pdb
+C:\Users\oleksandr.papirnyk\Desktop\WebServerTestAttempt\WebServerTestAttempt\obj\Debug\WebServerTestAttempt.csprojAssemblyReference.cache
+C:\Users\oleksandr.papirnyk\Desktop\WebServerTestAttempt\WebServerTestAttempt\obj\Debug\WebServerTestAttempt.exe
+C:\Users\oleksandr.papirnyk\Desktop\WebServerTestAttempt\WebServerTestAttempt\obj\Debug\WebServerTestAttempt.pdb
+C:\Users\oleksandr.papirnyk\Desktop\WebServerTestAttempt\WebServerTestAttempt\bin\Debug\images\homyak.jpg

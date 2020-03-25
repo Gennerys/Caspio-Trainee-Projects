@@ -1,0 +1,22 @@
+﻿** Highlights
+     Tables that will be rebuilt
+       None
+     Clustered indexes that will be dropped
+       None
+     Clustered indexes that will be created
+       None
+     Possible data issues
+       None
+
+** User actions
+     Create
+       [dbo].[ct_poll] (Table)
+       [dbo].[ct_poll_option] (Table)
+       [dbo].[ct_vote] (Table)
+       Default Constraint: unnamed constraint on [dbo].[ct_poll] (Default Constraint)
+       Default Constraint: unnamed constraint on [dbo].[ct_vote] (Default Constraint)
+       [dbo].[FK_PK_poll_id] (Foreign Key)
+       [dbo].[FK_PK_poll_vote_id] (Foreign Key)
+       [dbo].[CK_poll_option_serial_number] (Check Constraint)
+
+** Supporting actions

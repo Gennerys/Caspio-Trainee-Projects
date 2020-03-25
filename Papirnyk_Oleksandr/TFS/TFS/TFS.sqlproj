@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <Name>TFS</Name>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectVersion>4.1</ProjectVersion>
+    <ProjectGuid>{844d67ea-969a-41ef-bc68-f73f59c8631c}</ProjectGuid>
+    <DSP>Microsoft.Data.Tools.Schema.Sql.Sql130DatabaseSchemaProvider</DSP>
+    <OutputType>Database</OutputType>
+    <RootPath>
+    </RootPath>
+    <RootNamespace>TFS</RootNamespace>
+    <AssemblyName>TFS</AssemblyName>
+    <ModelCollation>1033, CI</ModelCollation>
+    <DefaultFileStructure>BySchemaAndSchemaType</DefaultFileStructure>
+    <DeployToDatabase>True</DeployToDatabase>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetLanguage>CS</TargetLanguage>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SqlServerVerification>False</SqlServerVerification>
+    <IncludeCompositeObjects>True</IncludeCompositeObjects>
+    <TargetDatabaseSet>True</TargetDatabaseSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>False</TreatWarningsAsErrors>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <BuildScriptName>$(MSBuildProjectName).sql</BuildScriptName>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
+    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
+    <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
+    <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Condition="'$(SQLDBExtensionsRefPath)' != ''" Project="$(SQLDBExtensionsRefPath)\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <Import Condition="'$(SQLDBExtensionsRefPath)' == ''" Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets" />
+  <ItemGroup>
+    <Folder Include="Properties" />
+    <Folder Include="Tables" />
+    <Folder Include="Scripts" />
+    <Folder Include="Triggers" />
+    <Folder Include="Stored Procedures" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="Tables\User.sql" />
+    <Build Include="Tables\AuditAction.sql" />
+    <Build Include="Tables\Bug.sql" />
+    <Build Include="Tables\UserStory.sql" />
+    <Build Include="Tables\Task.sql" />
+    <Build Include="Tables\BugHistory.sql" />
+    <Build Include="Tables\TaskHistory.sql" />
+    <Build Include="Tables\UserStoryHistory.sql" />
+    <Build Include="Tables\State.sql" />
+    <Build Include="Tables\Area.sql" />
+    <Build Include="Tables\TaskComments.sql" />
+    <Build Include="Tables\BugComments.sql" />
+    <Build Include="Tables\UserStoryComments.sql" />
+    <None Include="Scripts\SeedDB.sql" />
+    <Build Include="Tables\UserStoryChilds.sql" />
+    <Build Include="Tables\BugChilds.sql" />
+    <Build Include="Triggers\TaskInsertAudit.sql" />
+    <Build Include="Triggers\UserStoryInsertAudit.sql" />
+    <Build Include="Triggers\BugInsertAudit.sql" />
+    <Build Include="Triggers\TaskDeleteAudit.sql" />
+    <Build Include="Triggers\BugDeleteAudit.sql" />
+    <Build Include="Triggers\UserStoryDeleteAudit.sql" />
+    <Build Include="Triggers\TaskUpdateAudit.sql" />
+    <Build Include="Triggers\BugUpdateAudit.sql" />
+    <Build Include="Triggers\UserStoryUpdateAudit.sql" />
+    <Build Include="Stored Procedures\AddUser.sql" />
+    <Build Include="Stored Procedures\UpdateUserTitle.sql" />
+    <Build Include="Tables\SubscribedToTask.sql" />
+    <Build Include="Tables\SubscribedToUserStory.sql" />
+    <Build Include="Tables\SubscribedToBug.sql" />
+    <Build Include="Stored Procedures\RestoreTaskAtDate.sql" />
+    <Build Include="Stored Procedures\AddTask.sql" />
+    <Build Include="Stored Procedures\AddUserStory.sql" />
+    <Build Include="Stored Procedures\AddBug.sql" />
+    <Build Include="Stored Procedures\GetCommentsTask.sql" />
+    <Build Include="Stored Procedures\GetCommentsUserStory.sql" />
+    <Build Include="Stored Procedures\GetCommentsBug.sql" />
+    <Build Include="Stored Procedures\GetCommentsByUser.sql" />
+    <Build Include="Stored Procedures\SubscribeToWorkItem.sql" />
+    <Build Include="Stored Procedures\UnsubscribeFromWorkItem.sql" />
+    <Build Include="Stored Procedures\UserWorkItemSubscribes.sql" />
+    <Build Include="Stored Procedures\AssignUserWorkItem.sql" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="TFS.publish.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <RefactorLog Include="TFS.refactorlog" />
+  </ItemGroup>
+  <ItemGroup>
+    <PostDeploy Include="Script.PostDeployment.sql" />
+  </ItemGroup>
+</Project>

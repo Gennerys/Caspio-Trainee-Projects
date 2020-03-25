@@ -1,0 +1,60 @@
+﻿@model PollCreator.ViewModels.PollRenderViewModel
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="/css/votePage.css">
+	<title>Vote Page</title>
+</head>
+<body>
+<div style="width: 100%;">
+	<ul class="headerUl">
+		<li class="headerLi"><a asp-action="Index" asp-controller="Home">Home Page</a></li>
+		<li class="headerLi"><a asp-action="Create" asp-controller="PollBuilder">Create Another Poll</a></li>
+	</ul>
+</div>
+<div class="subTitle">
+	@Html.DisplayName(Model.Title)
+</div>
+<div class="container">
+	@{
+		using (Html.BeginForm("SubmitVote", "PollRenderer", FormMethod.Post, new {id = "voteForm", @class = "voteForm position__absolute"}))
+		{
+			<div class="voteElementsContainer">
+				@if (Model.IsSingleOption)
+				{
+					foreach (var option in Model.Options)
+					{
+						<div class="radiobtn">
+							<input id=@option.SerialNumber name="radioBtn" type="radio" value="@option.Value"/>
+							<label style="width: fit-content;" for="@option.SerialNumber"> @option.Value</label>
+						</div>
+					}
+				}
+				else
+				{
+
+					foreach (var option in Model.Options)
+					{
+						<div class="voteItemContainer">
+							<div class="check">
+								<input id=@option.SerialNumber name="@option.Value" type="checkbox" value="@option.Value"/>
+								<label for="@option.SerialNumber"></label>
+							</div>
+							<span class="spanForCheckBox">@option.Value</span>
+						</div>
+					}
+				}
+			</div>
+			<input asp-for="PollId" value="@Model.PollId"/>
+			<input asp-for="HasVoted" value="@Model.HasVoted"/>
+			<button class="votePageBtn" id="submitVote" type="button">Vote</button>
+		}
+	}
+	<div class="chart-container">
+		<canvas id="voteChart"></canvas>
+	</div>
+</div>
+<span id="votesOnRender"></span>
+<script src="/js/vote.js" type="module"></script>
+</body>
+</html>
